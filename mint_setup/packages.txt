@@ -2,9 +2,7 @@ git
 vim
 inkscape
 pdfarranger
-docker*
 jq
 sed
 htop
 tree
-python3-pip
