@@ -30,5 +30,6 @@ echo -e 'eval "$(pyenv init -)"' >> ~/.profile
 
 
 # install poetry
-pip install poetry
-echo -e 'export PATH="$HOME/.poetry/bin:$PATH"' >> ~/.bashrc
+curl -sSL https://install.python-poetry.org | python3 -  # --uninstall
+echo -e '\n# setup poetry' >> ~/.bashrc
+echo -e 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc
