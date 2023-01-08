@@ -3,4 +3,7 @@ vim
 inkscape
 pdfarranger
 docker*
-
+jq
+sed
+htop
+tree
