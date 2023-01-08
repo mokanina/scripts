@@ -6,6 +6,12 @@ set -e
 set -o pipefail
 
 
+# allow usage as non-root user
+sudo groupadd docker
+sudo usermod -aG docker $USER
+newgrp docker
+
+
 # set up docker aliases
 echo -e "# docker" >> $HOME/.bash_aliases
 echo -e "alias docker_clean_images='yes | docker image prune'" >> $HOME/.bash_aliases
