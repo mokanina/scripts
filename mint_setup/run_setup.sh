@@ -6,7 +6,7 @@ sudo ufw enable
 
 
 # install packages
-sudo apt-get --yes update && apt-get --yes upgrade
+sudo apt-get --yes update && sudo apt-get --yes upgrade
 xargs sudo apt-get --yes install < packages.txt
 
 
