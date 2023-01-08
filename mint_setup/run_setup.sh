@@ -1,11 +1,6 @@
 #!/bin/bash
 
 
-# exit if any program returns "non true"
-set -e
-set -o pipefail
-
-
 # enable firewall
 sudo ufw enable
 
