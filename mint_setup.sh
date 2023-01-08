@@ -1,4 +1,4 @@
-sudo udf enable
+sudo ufw enable
 
 sudo apt-get update && upgrade
 sudo apt-get install inkscape
