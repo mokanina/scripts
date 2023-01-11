@@ -39,3 +39,9 @@ poetry completions bash >> ~/.bash_completion
 # set python
 #sudo ln -s /usr/bin/python2.7 /usr/bin/python2
 sudo ln -s /usr/bin/python3 /usr/bin/python
+
+
+# install spotify
+curl -sS https://download.spotify.com/debian/pubkey_5E3C45D7B312C643.gpg | sudo apt-key add -
+echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
+sudo apt-get update && sudo apt-get install spotify-client
